@@ -1,0 +1,30 @@
+@import "./global/reset";
+@import "./mixins/breakpoints";
+@import "./components/header";
+@import "./components/about";
+@import "./components/footer";
+@import "./components/works";
+@import "./components/intro";
+@import "./components/projet";
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #efefef;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+body {
+  background-color: #efefef;
+}

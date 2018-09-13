@@ -1,0 +1,59 @@
+.Intro {
+  height: 70%;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  &__Loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 30%;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: $SecondFont;
+  }
+
+  &__Svg {
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    display: flex;
+    margin-left: 3%;
+    justify-content: center;
+  }
+}
+
+svg {
+  display: flex;
+  justify-content: center;
+  width: 5%;
+  margin: 0 auto;
+}
+
+.move {
+  margin-left: 150px;
+  animation: move 3s linear infinite;
+}
+@keyframes move {
+  0% {
+    transform: translate(0%, 0px);
+  }
+
+  25% {
+    transform: translate(-10%, 0px);
+  }
+
+  75% {
+    transform: translate(7%, 0px);
+  }
+
+  100% {
+    transform: translate(0%, 0px);
+  }
+}

@@ -1,0 +1,109 @@
+.Title {
+	position: fixed;
+	z-index: -100;
+	font-size: 129px;
+	justify-content: center;
+	width: 100%;
+	top: 20vh;
+	display: flex;
+	font-family: $SecondFont;
+	font-weight: 600;
+	font-style: italic;
+}
+
+
+
+
+
+$w: 80vmin;
+$h: 60vmin;
+$p: 0.5;
+$s: 0.2;
+
+$ease: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+.Proj {
+	margin-top: 50vh;
+}
+
+.stripe {
+	opacity: 0;
+}
+.Projet{
+	position: relative;
+	height: 60vh;
+	&:nth-child(1){
+		.image__top, .image__bottom, .image__inner{
+			background-image: url('../../img/minecraft1.jpg');
+		}
+	}
+	&:nth-child(2){
+		.image__top, .image__bottom, .image__inner{
+			background-image: url('../../img/minecraft.png');
+		}
+	}
+	&:nth-child(3){
+		.image__top, .image__bottom, .image__inner{
+			background-image: url('https://picsum.photos/803/603?image=608');
+		}
+	}
+	&:nth-child(4){
+		.image__top, .image__bottom, .image__inner{
+			background-image: url('https://picsum.photos/803/603?image=565');
+		}
+	}
+	&:nth-child(5){
+		.image__top, .image__bottom, .image__inner{
+			background-image: url('https://picsum.photos/804/604?image=218');
+		}
+	}
+	&:nth-child(6){
+		.image__top, .image__bottom, .image__inner{
+			background-image: url('https://picsum.photos/805/605?image=1032');
+		}
+	}
+}
+
+.image{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	width: $w;
+	height: $h;
+	transition: transform 1000ms $ease;
+
+	&__top, &__bottom, &__inner{
+		width: 100%;
+		background-size: $w $h;
+	}
+	&__top, &__bottom, &__stretch{
+		//transition: transform 200ms linear;
+	}
+
+	&__top{
+		height: $p*100%;
+		background-position: top;
+	}
+
+	&__bottom{
+		height: (1-$p)*100%;
+		background-position: 0% 99%;
+	}
+
+	&__stretch{
+		height: $s*100%;
+		overflow: hidden;
+		position: relative;
+		z-index: 2;
+		margin: -1px 0;
+	}
+	&__inner{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-position: 0 $p*100%;
+		height: 1px;
+		transform: scaleY(1000);
+	}
+}

@@ -1,0 +1,99 @@
+$baseline: 20px;
+$ColorLink: #fc4747;
+$baseline: 5px;
+
+.About {
+  width: 90%;
+  margin: 50vh auto 0;
+  @include breakpoint(laptop) {
+    width: 50%;
+    margin: 50vh auto 0 20%;
+  }
+
+  &__Presentation {
+    font-size: 32px;
+    line-height: 1.5;
+    width: 90%;
+    font-family: $SecondFont;
+    @include breakpoint(laptop) {
+      font-size: 46px;
+      width: 80%;
+    }
+
+    &-Soc {
+      font-style: italic;
+    }
+
+    &-Link {
+      font-style: italic;
+      font-size: 52px;
+
+      & > a {
+        color: $ColorLink;
+        text-decoration: none;
+        transition: 0.2s ease-out;
+        line-height: $baseline;
+        position: relative;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 3px;
+          width: 100%;
+          transition: width 0s ease-out;
+          @include breakpoint(laptop) {
+            height: 5px;
+          }
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          height: 3px;
+          width: 100%;
+          background: $ColorLink;
+          transition: width 0.2s ease-out;
+          @include breakpoint(laptop) {
+            height: 5px;
+          }
+        }
+
+        &:hover {
+          &:before {
+            width: 0;
+            background: $ColorLink;
+            transition: width 0.2s ease-out;
+          }
+
+          &:after {
+            width: 0;
+            background: transparent;
+            transition: width 0s ease;
+          }
+        }
+      }
+    }
+
+    &-Txt {
+      font-weight: 700;
+    }
+
+    &-Internship {
+      font-weight: 400;
+      padding-top: 8vh;
+      font-size: 32px;
+      font-weight: 700;
+      @include breakpoint(laptop) {
+        font-size: 46px;
+        font-weight: 700;
+        height: 44vh;
+      }
+    }
+  }
+}
