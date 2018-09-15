@@ -1,2 +1,68 @@
 $MainFont: 'Montserrat', sans-serif;
 $SecondFont: 'Crimson Text', serif;
+$ColorLink: #fc4747;
+$baseline: 5px;
+
+
+.Header {
+  position: fixed;
+  right: 10vw;
+  top: 5vh;
+  z-index: 100000;
+  @include breakpoint(laptop) {
+    right: 8vw;
+    top: 8vh;
+    font-size: 18px;
+  }
+
+  &__Link {
+    & > a {
+      text-decoration: none;
+      color: black;
+      font-family: $SecondFont;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -1vh;
+        height: 0px;
+        width: 100%;
+        transition: width 0s ease-out;
+        @include breakpoint(laptop) {
+          height: 2px;
+        }
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -1vh;
+        height: 0px;
+        width: 100%;
+        background: black;
+        transition: width 0.2s ease-out;
+        @include breakpoint(laptop) {
+          height: 2px;
+        }
+      }
+
+      &:hover {
+        &:before {
+          width: 0;
+          background: black;
+          transition: width 0.2s ease-out;
+        }
+
+        &:after {
+          width: 0;
+          background: transparent;
+          transition: width 0s ease;
+        }
+      }
+    }
+  }
+}

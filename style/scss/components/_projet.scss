@@ -1,7 +1,7 @@
 .Title {
 	position: fixed;
 	z-index: -100;
-	font-size: 129px;
+	font-size: 48px;
 	justify-content: center;
 	width: 100%;
 	top: 20vh;
@@ -9,6 +9,9 @@
 	font-family: $SecondFont;
 	font-weight: 600;
 	font-style: italic;
+	@include breakpoint(laptop) {
+			font-size: 92px;
+	}
 }
 
 
@@ -31,7 +34,10 @@ $ease: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 .Projet{
 	position: relative;
-	height: 60vh;
+	height: 40vh;
+	@include breakpoint(laptop) {
+		height: 60vh;
+	}
 	&:nth-child(1){
 		.image__top, .image__bottom, .image__inner{
 			background-image: url('../../img/minecraft1.jpg');
@@ -44,17 +50,17 @@ $ease: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	}
 	&:nth-child(3){
 		.image__top, .image__bottom, .image__inner{
-			background-image: url('https://picsum.photos/803/603?image=608');
+			background-image: url('../../img/minecraft3.jpg');
 		}
 	}
 	&:nth-child(4){
 		.image__top, .image__bottom, .image__inner{
-			background-image: url('https://picsum.photos/803/603?image=565');
+			background-image: url('../../img/minecraft4.jpg');
 		}
 	}
 	&:nth-child(5){
 		.image__top, .image__bottom, .image__inner{
-			background-image: url('https://picsum.photos/804/604?image=218');
+			background-image: url('../../img/minecraft5.jpg');
 		}
 	}
 	&:nth-child(6){

@@ -123,6 +123,54 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.Header {
+  position: fixed;
+  right: 10vw;
+  top: 5vh;
+  z-index: 100000; }
+  @media (min-width: 1024px) {
+    .Header {
+      right: 8vw;
+      top: 8vh;
+      font-size: 18px; } }
+  .Header__Link > a {
+    text-decoration: none;
+    color: black;
+    font-family: "Crimson Text", serif; }
+    .Header__Link > a:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -1vh;
+      height: 0px;
+      width: 100%;
+      transition: width 0s ease-out; }
+      @media (min-width: 1024px) {
+        .Header__Link > a:before {
+          height: 2px; } }
+    .Header__Link > a:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -1vh;
+      height: 0px;
+      width: 100%;
+      background: black;
+      transition: width 0.2s ease-out; }
+      @media (min-width: 1024px) {
+        .Header__Link > a:after {
+          height: 2px; } }
+    .Header__Link > a:hover:before {
+      width: 0;
+      background: black;
+      transition: width 0.2s ease-out; }
+    .Header__Link > a:hover:after {
+      width: 0;
+      background: transparent;
+      transition: width 0s ease; }
+
 .About {
   width: 90%;
   margin: 50vh auto 0; }
@@ -228,6 +276,7 @@ table {
           margin-bottom: 5vh; } }
 
 .Works {
+  margin-top: 100px;
   margin-left: 5%; }
   @media (min-width: 1024px) {
     .Works {
@@ -236,6 +285,17 @@ table {
     font-size: 24px;
     font-family: "Crimson Text", serif;
     font-weight: 600; }
+  .Works__Container {
+    margin-top: 50px;
+    font-family: "Crimson Text", serif; }
+    .Works__Container-Link {
+      margin-bottom: 25px; }
+      .Works__Container-Link > a {
+        font-size: 48px;
+        color: black;
+        font-weight: 700; }
+        .Works__Container-Link > a:hover {
+          color: white; }
 
 .Intro {
   height: 70%;
@@ -285,7 +345,7 @@ svg {
 .Title {
   position: fixed;
   z-index: -100;
-  font-size: 129px;
+  font-size: 48px;
   justify-content: center;
   width: 100%;
   top: 20vh;
@@ -293,6 +353,9 @@ svg {
   font-family: "Crimson Text", serif;
   font-weight: 600;
   font-style: italic; }
+  @media (min-width: 1024px) {
+    .Title {
+      font-size: 92px; } }
 
 .Proj {
   margin-top: 50vh; }
@@ -302,17 +365,20 @@ svg {
 
 .Projet {
   position: relative;
-  height: 60vh; }
+  height: 40vh; }
+  @media (min-width: 1024px) {
+    .Projet {
+      height: 60vh; } }
   .Projet:nth-child(1) .image__top, .Projet:nth-child(1) .image__bottom, .Projet:nth-child(1) .image__inner {
     background-image: url("../../img/minecraft1.jpg"); }
   .Projet:nth-child(2) .image__top, .Projet:nth-child(2) .image__bottom, .Projet:nth-child(2) .image__inner {
     background-image: url("../../img/minecraft.png"); }
   .Projet:nth-child(3) .image__top, .Projet:nth-child(3) .image__bottom, .Projet:nth-child(3) .image__inner {
-    background-image: url("https://picsum.photos/803/603?image=608"); }
+    background-image: url("../../img/minecraft3.jpg"); }
   .Projet:nth-child(4) .image__top, .Projet:nth-child(4) .image__bottom, .Projet:nth-child(4) .image__inner {
-    background-image: url("https://picsum.photos/803/603?image=565"); }
+    background-image: url("../../img/minecraft4.jpg"); }
   .Projet:nth-child(5) .image__top, .Projet:nth-child(5) .image__bottom, .Projet:nth-child(5) .image__inner {
-    background-image: url("https://picsum.photos/804/604?image=218"); }
+    background-image: url("../../img/minecraft5.jpg"); }
   .Projet:nth-child(6) .image__top, .Projet:nth-child(6) .image__bottom, .Projet:nth-child(6) .image__inner {
     background-image: url("https://picsum.photos/805/605?image=1032"); }
 
@@ -363,6 +429,7 @@ svg {
   background: black; }
 
 body {
+  cursor: url("https://i.imgur.com/rydDVmx.jpg");
   background-color: #efefef; }
 
 /*# sourceMappingURL=style.css.map */
