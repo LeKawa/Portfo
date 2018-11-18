@@ -12,7 +12,7 @@ $baseline: 5px;
 
   &__Presentation {
     font-size: 32px;
-    line-height: 1.5;
+    line-height: 1.2;
     width: 90%;
     font-family: $SecondFont;
     @include breakpoint(laptop) {
@@ -26,7 +26,10 @@ $baseline: 5px;
 
     &-Link {
       font-style: italic;
-      font-size: 52px;
+      font-size: 32px;
+      @include breakpoint(laptop) {
+        font-size: 52px;
+      }
 
       & > a {
         color: $ColorLink;

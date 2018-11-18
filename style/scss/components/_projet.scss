@@ -1,7 +1,7 @@
 .Title {
 	position: fixed;
 	z-index: -100;
-	font-size: 48px;
+	font-size: 32px;
 	justify-content: center;
 	width: 100%;
 	top: 20vh;
@@ -10,19 +10,13 @@
 	font-weight: 600;
 	font-style: italic;
 	@include breakpoint(laptop) {
-			font-size: 92px;
+		font-size: 92px;
 	}
 }
-
-
-
-
-
 $w: 80vmin;
 $h: 60vmin;
 $p: 0.5;
 $s: 0.2;
-
 $ease: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 
 .Proj {
@@ -32,45 +26,54 @@ $ease: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 .stripe {
 	opacity: 0;
 }
-.Projet{
+
+.Projet {
 	position: relative;
 	height: 40vh;
 	@include breakpoint(laptop) {
 		height: 60vh;
 	}
-	&:nth-child(1){
-		.image__top, .image__bottom, .image__inner{
-			background-image: url('../../img/minecraft1.jpg');
-		}
+
+	&:nth-child(1) {
+		.image__bottom,
+		.image__inner,
+		.image__top {}
 	}
-	&:nth-child(2){
-		.image__top, .image__bottom, .image__inner{
-			background-image: url('../../img/minecraft.png');
-		}
+
+	&:nth-child(2) {
+		.image__bottom,
+		.image__inner,
+		.image__top {}
 	}
-	&:nth-child(3){
-		.image__top, .image__bottom, .image__inner{
-			background-image: url('../../img/minecraft3.jpg');
-		}
+
+	&:nth-child(3) {
+		.image__bottom,
+		.image__inner,
+		.image__top {}
 	}
-	&:nth-child(4){
-		.image__top, .image__bottom, .image__inner{
-			background-image: url('../../img/minecraft4.jpg');
-		}
+
+	&:nth-child(4) {
+		.image__bottom,
+		.image__inner,
+		.image__top {}
 	}
-	&:nth-child(5){
-		.image__top, .image__bottom, .image__inner{
-			background-image: url('../../img/minecraft5.jpg');
-		}
+
+	&:nth-child(5) {
+		.image__bottom,
+		.image__inner,
+		.image__top {}
 	}
-	&:nth-child(6){
-		.image__top, .image__bottom, .image__inner{
-			background-image: url('https://picsum.photos/805/605?image=1032');
+
+	&:nth-child(6) {
+		.image__bottom,
+		.image__inner,
+		.image__top {
+			background-image: url("https://picsum.photos/805/605?image=1032");
 		}
 	}
 }
 
-.image{
+.image {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -79,37 +82,63 @@ $ease: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	height: $h;
 	transition: transform 1000ms $ease;
 
-	&__top, &__bottom, &__inner{
+	&__bottom,
+	&__inner,
+	&__top {
 		width: 100%;
 		background-size: $w $h;
 	}
-	&__top, &__bottom, &__stretch{
+
+	&__bottom,
+	&__stretch,
+	&__top {
 		//transition: transform 200ms linear;
 	}
 
-	&__top{
+	&__top {
 		height: $p*100%;
 		background-position: top;
 	}
 
-	&__bottom{
+	&__bottom {
 		height: (1-$p)*100%;
-		background-position: 0% 99%;
+		background-position: 0 99%;
 	}
 
-	&__stretch{
+	&__stretch {
 		height: $s*100%;
 		overflow: hidden;
 		position: relative;
 		z-index: 2;
 		margin: -1px 0;
 	}
-	&__inner{
+
+	&__inner {
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		background-position: 0 $p*100%;
 		height: 1px;
 		transform: scaleY(1000);
+	}
+}
+
+.Article {
+	width: 100%;
+	margin-top: 25vh;
+	margin-bottom: 10vh;
+
+	&__Item {
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom: 25vh;
+		@include breakpoint(laptop) {
+			width: 45%;
+		}
+
+		& > img {
+			width: 100%;
+			height: auto;
+		}
 	}
 }

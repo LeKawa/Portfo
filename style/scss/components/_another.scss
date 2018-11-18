@@ -1,0 +1,21 @@
+.Another {
+  margin-top: 25vh;
+  height: 30px;
+  margin-bottom: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__Link {
+    font-size: 48px;
+    font-family: $SecondFont;
+
+    & > a {
+      color: black;
+      &:hover {
+        color: white;
+      }
+
+    }
+  }
+}

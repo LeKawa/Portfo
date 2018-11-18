@@ -180,7 +180,7 @@ table {
       margin: 50vh auto 0 20%; } }
   .About__Presentation {
     font-size: 32px;
-    line-height: 1.5;
+    line-height: 1.2;
     width: 90%;
     font-family: "Crimson Text", serif; }
     @media (min-width: 1024px) {
@@ -191,7 +191,10 @@ table {
       font-style: italic; }
     .About__Presentation-Link {
       font-style: italic;
-      font-size: 52px; }
+      font-size: 32px; }
+      @media (min-width: 1024px) {
+        .About__Presentation-Link {
+          font-size: 52px; } }
       .About__Presentation-Link > a {
         color: #fc4747;
         text-decoration: none;
@@ -276,8 +279,9 @@ table {
           margin-bottom: 5vh; } }
 
 .Works {
-  margin-top: 100px;
-  margin-left: 5%; }
+  margin-top: 20vh;
+  margin-left: 5%;
+  position: relative; }
   @media (min-width: 1024px) {
     .Works {
       margin-left: 20%; } }
@@ -287,15 +291,35 @@ table {
     font-weight: 600; }
   .Works__Container {
     margin-top: 50px;
-    font-family: "Crimson Text", serif; }
+    font-family: "Crimson Text", serif;
+    display: flex; }
     .Works__Container-Link {
-      margin-bottom: 25px; }
+      margin-bottom: 20px; }
       .Works__Container-Link > a {
-        font-size: 48px;
+        font-size: 42px;
         color: black;
-        font-weight: 700; }
+        font-weight: 700;
+        transition: all .1s ease-out;
+        white-space: nowrap; }
+        @media (min-width: 1024px) {
+          .Works__Container-Link > a {
+            font-size: 48px; } }
         .Works__Container-Link > a:hover {
           color: white; }
+
+.img {
+  width: 500px;
+  height: 300px;
+  margin-left: 20px;
+  background-size: cover;
+  position: absolute; }
+  .imgContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; }
 
 .Intro {
   height: 70%;
@@ -345,7 +369,7 @@ svg {
 .Title {
   position: fixed;
   z-index: -100;
-  font-size: 48px;
+  font-size: 32px;
   justify-content: center;
   width: 100%;
   top: 20vh;
@@ -369,17 +393,9 @@ svg {
   @media (min-width: 1024px) {
     .Projet {
       height: 60vh; } }
-  .Projet:nth-child(1) .image__top, .Projet:nth-child(1) .image__bottom, .Projet:nth-child(1) .image__inner {
-    background-image: url("../../img/minecraft1.jpg"); }
-  .Projet:nth-child(2) .image__top, .Projet:nth-child(2) .image__bottom, .Projet:nth-child(2) .image__inner {
-    background-image: url("../../img/minecraft.png"); }
-  .Projet:nth-child(3) .image__top, .Projet:nth-child(3) .image__bottom, .Projet:nth-child(3) .image__inner {
-    background-image: url("../../img/minecraft3.jpg"); }
-  .Projet:nth-child(4) .image__top, .Projet:nth-child(4) .image__bottom, .Projet:nth-child(4) .image__inner {
-    background-image: url("../../img/minecraft4.jpg"); }
-  .Projet:nth-child(5) .image__top, .Projet:nth-child(5) .image__bottom, .Projet:nth-child(5) .image__inner {
-    background-image: url("../../img/minecraft5.jpg"); }
-  .Projet:nth-child(6) .image__top, .Projet:nth-child(6) .image__bottom, .Projet:nth-child(6) .image__inner {
+  .Projet:nth-child(6) .image__bottom,
+  .Projet:nth-child(6) .image__inner,
+  .Projet:nth-child(6) .image__top {
     background-image: url("https://picsum.photos/805/605?image=1032"); }
 
 .image {
@@ -390,7 +406,7 @@ svg {
   width: 80vmin;
   height: 60vmin;
   transition: transform 1000ms cubic-bezier(0.77, 0, 0.175, 1); }
-  .image__top, .image__bottom, .image__inner {
+  .image__bottom, .image__inner, .image__top {
     width: 100%;
     background-size: 80vmin 60vmin; }
   .image__top {
@@ -398,7 +414,7 @@ svg {
     background-position: top; }
   .image__bottom {
     height: 50%;
-    background-position: 0% 99%; }
+    background-position: 0 99%; }
   .image__stretch {
     height: 20%;
     overflow: hidden;
@@ -413,6 +429,63 @@ svg {
     height: 1px;
     transform: scaleY(1000); }
 
+.Article {
+  width: 100%;
+  margin-top: 25vh;
+  margin-bottom: 10vh; }
+  .Article__Item {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 25vh; }
+    @media (min-width: 1024px) {
+      .Article__Item {
+        width: 45%; } }
+    .Article__Item > img {
+      width: 100%;
+      height: auto; }
+
+.Contact {
+  margin-left: 5%;
+  margin-top: 15vh;
+  font-family: "Crimson Text", serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5vh; }
+  @media (min-width: 1024px) {
+    .Contact {
+      margin-top: 25vh;
+      margin-left: 20%;
+      margin-bottom: 10vh; } }
+  .Contact__Social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh; }
+    .Contact__Social > a {
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: black;
+      font-family: "Crimson Text", serif;
+      font-weight: 700;
+      font-size: 32px;
+      transition: all 0.1s ease-out; }
+      .Contact__Social > a:hover {
+        color: white; }
+
+.Another {
+  margin-top: 25vh;
+  height: 30px;
+  margin-bottom: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .Another__Link {
+    font-size: 48px;
+    font-family: "Crimson Text", serif; }
+    .Another__Link > a {
+      color: black; }
+      .Another__Link > a:hover {
+        color: white; }
+
 *,
 *:after,
 *:before {
@@ -420,7 +493,7 @@ svg {
   box-sizing: border-box; }
 
 ::-webkit-scrollbar {
-  width: 5px; }
+  width: 10px; }
 
 ::-webkit-scrollbar-track {
   background: #efefef; }

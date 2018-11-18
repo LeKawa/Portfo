@@ -1,0 +1,33 @@
+.Contact {
+  margin-left: 5%;
+  margin-top: 15vh;
+  font-family: $SecondFont;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5vh;
+  @include breakpoint(laptop) {
+    margin-top: 25vh;
+    margin-left: 20%;
+    margin-bottom: 10vh;
+  }
+
+  &__Social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+
+    & > a {
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: black;
+      font-family: $SecondFont;
+      font-weight: 700;
+      font-size: 32px;
+      transition: all 0.1s ease-out;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 .Works {
-  margin-top: 100px;
+  margin-top: 20vh;
   margin-left: 5%;
+  position: relative;
   @include breakpoint(laptop) {
     margin-left: 20%;
   }
@@ -14,23 +15,45 @@
   &__Container {
     margin-top: 50px;
     font-family: $SecondFont;
+    display:flex;
 
     &-Link {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
 
       & > a {
-        font-size: 48px;
+        font-size: 42px;
         color: black;
         font-weight: 700;
-
+        transition: all .1s ease-out;
+        white-space: nowrap;
+        @include breakpoint(laptop) {
+          font-size: 48px;
+        }
         &:hover {
           color: white;
 
           &:nth-child(1) {
-          
+
           }
         }
       }
     }
+  }
+}
+
+.img {
+  width: 500px;
+  height: 300px;
+  margin-left: 20px;
+  background-size: cover;
+  position: absolute;
+
+  &Container {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    pointer-events: none;
   }
 }

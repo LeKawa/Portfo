@@ -6,6 +6,8 @@
 @import "./components/works";
 @import "./components/intro";
 @import "./components/projet";
+@import "./components/contact";
+@import "./components/another";
 
 *,
 *:after,
@@ -15,7 +17,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
