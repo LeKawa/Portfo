@@ -12,16 +12,17 @@ $baseline: 5px;
 
   &__Presentation {
     font-size: 32px;
-    line-height: 1.2;
+    line-height: 1;
     width: 90%;
     font-family: $SecondFont;
     @include breakpoint(laptop) {
       font-size: 46px;
-      width: 80%;
+      width: 450px;
     }
 
     &-Soc {
       font-style: italic;
+      opacity: 0.5;
     }
 
     &-Link {
@@ -48,7 +49,7 @@ $baseline: 5px;
           width: 100%;
           transition: width 0s ease-out;
           @include breakpoint(laptop) {
-            height: 5px;
+            height: 3px;
           }
         }
 
@@ -63,7 +64,7 @@ $baseline: 5px;
           background: $ColorLink;
           transition: width 0.2s ease-out;
           @include breakpoint(laptop) {
-            height: 5px;
+            height: 3px;
           }
         }
 
@@ -84,17 +85,17 @@ $baseline: 5px;
     }
 
     &-Txt {
-      font-weight: 700;
+      font-weight: 400;
     }
 
     &-Internship {
       font-weight: 400;
       padding-top: 8vh;
       font-size: 32px;
-      font-weight: 700;
+      font-weight: 400;
       @include breakpoint(laptop) {
         font-size: 46px;
-        font-weight: 700;
+        font-weight: 400;
         height: 44vh;
       }
     }

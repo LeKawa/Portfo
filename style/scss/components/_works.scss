@@ -1,5 +1,5 @@
 .Works {
-  margin-top: 20vh;
+  margin-top: 100px;
   margin-left: 5%;
   position: relative;
   @include breakpoint(laptop) {
@@ -9,7 +9,7 @@
   &-Title {
     font-size: 24px;
     font-family: $SecondFont;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   &__Container {
@@ -18,19 +18,20 @@
     display:flex;
 
     &-Link {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
 
       & > a {
         font-size: 42px;
         color: black;
-        font-weight: 700;
+        text-decoration: none;
+        font-weight: 400;
         transition: all .1s ease-out;
         white-space: nowrap;
         @include breakpoint(laptop) {
           font-size: 48px;
         }
         &:hover {
-          color: white;
+          color: #fc4747;
 
           &:nth-child(1) {
 

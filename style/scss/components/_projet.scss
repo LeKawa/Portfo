@@ -7,7 +7,7 @@
 	top: 20vh;
 	display: flex;
 	font-family: $SecondFont;
-	font-weight: 600;
+	font-weight: 400;
 	font-style: italic;
 	@include breakpoint(laptop) {
 		font-size: 92px;
@@ -125,13 +125,13 @@ $ease: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 
 .Article {
 	width: 100%;
-	margin-top: 25vh;
-	margin-bottom: 10vh;
+	margin-top: 150px;
+	margin-bottom: 150px;
 
 	&__Item {
 		width: 70%;
 		margin: 0 auto;
-		margin-bottom: 25vh;
+		margin-bottom: 150px;
 		@include breakpoint(laptop) {
 			width: 45%;
 		}
