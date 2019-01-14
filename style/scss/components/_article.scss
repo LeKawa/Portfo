@@ -3,26 +3,46 @@
   height: 80vh;
   overflow: hidden;
   width: 100%;
+  justify-content: center;
+  @include breakpoint(laptop) {
+    justify-content: flex-start;
+  }
 
   &_Item {
+    white-space: nowrap;
     font-family: $SecondFont;
-    margin-top: 15vh;
-    font-size: 370px;
+    margin-top: 45vh;
+    font-size: 32px;
     display: flex;
-    margin-left: -5vw;
+    margin-left: 0;
+    @include breakpoint(laptop) {
+      font-size: 370px;
+      margin-left: -5vw;
+      margin-top: 15vh;
+    }
   }
 }
 
 .Article {
-  display: flex;
-  width: 714px;
-  margin: 100px auto;
+  display: block;
+  width: 350px;
+  text-align: center;
+  margin: 100px auto 50px;
+  @include breakpoint(laptop) {
+    display: flex;
+    width: 714px;
+    text-align: left;
+    margin: 100px auto;
+  }
 
   &_Type {
     font-family: $MainFont;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 50px;
+    @include breakpoint(laptop) {
+      font-size: 16px;
+    }
 
     & > p {
       padding-bottom: 5px;
@@ -41,43 +61,79 @@
 }
 
 .Text {
-  width: 720px;
+  width: 100%;
+  text-align: center;
   font-size: 24px;
+  margin-top: 50px;
   font-family: $MainFont;
   line-height: 1.2;
+  @include breakpoint(laptop) {
+    width: 720px;
+    margin-top: 0;
+    text-align: left;
+  }
 }
 
 .Desc {
-  width: 714px;
+  width: 350px;
   margin: 0 auto;
-  display: flex;
+  display: block;
   justify-content: space-between;
+  @include breakpoint(laptop) {
+    display: flex;
+    width: 714px;
+  }
 
   &_Text {
-    width: 365px;
+    text-align: center;
     font-weight: 300;
     line-height: 1.4;
-    font-size: 20px;
+    font-size: 22px;
+    margin-top: 50px;
     font-family: $MainFont;
+    @include breakpoint(laptop) {
+      text-align: left;
+      width: 365px;
+      font-size: 20px;
+      margin-top: 0;
+    }
   }
 
   &_Link {
+    text-align: center;
+    @include breakpoint(laptop) {
+      text-align: left;
+    }
+
     & > a {
-      font-size: 16px;
+      font-size: 18px;
       font-family: $SecondFont;
       color: #fc4747;
+      transition: all 0.2s ease-out;
+      @include breakpoint(laptop) {
+        font-size: 16px;
+      }
+
+      &:hover {
+        color: black;
+      }
     }
   }
 }
 
 .Art {
-  margin: 150px auto;
-  width: 1024px;
+  margin: 100px auto;
+  width: 324px;
+  @include breakpoint(laptop) {
+    margin: 150px auto;
+    width: 824px;
+  }
 
   &_Img {
     width: 100%;
 
     & > img {
+      margin-bottom: 75px;
       width: 100%;
       height: auto;
     }
