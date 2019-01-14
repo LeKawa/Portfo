@@ -21,8 +21,14 @@ $baseline: 5px;
     }
 
     &-Soc {
+      transition: all .4s ease-out;
       font-style: italic;
       opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+        color: black;
+      }
     }
 
     &-Link {
@@ -44,7 +50,7 @@ $baseline: 5px;
           display: block;
           position: absolute;
           left: 0;
-          bottom: 0;
+          bottom: 5px;
           height: 3px;
           width: 100%;
           transition: width 0s ease-out;
@@ -58,7 +64,7 @@ $baseline: 5px;
           display: block;
           position: absolute;
           right: 0;
-          bottom: 0;
+          bottom: 5px;
           height: 3px;
           width: 100%;
           background: $ColorLink;
@@ -96,7 +102,6 @@ $baseline: 5px;
       @include breakpoint(laptop) {
         font-size: 46px;
         font-weight: 400;
-        height: 44vh;
       }
     }
   }

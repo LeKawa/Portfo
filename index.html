@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-
-
-
 <html>
 
 <head>
@@ -18,11 +15,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Bonjour à toi, je suis Hector Travaillé un Creative developper...">
   <meta property="og:site_name" content="HectorTravaillé">
-  <title>Hector Travaillé | UX / UI Designer</title>
+  <title>Hector Travaillé</title>
   <link rel="stylesheet" href="style/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Cardo:400,700" rel="stylesheet">
-  	<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,600,600i,700,700i" rel="stylesheet">
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function() {
+      var e, t = document.createElement("style");
+      return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+  </script>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116376698-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -39,7 +43,7 @@
 <body>
   <section class="About">
     <div class="About__Presentation">
-      <p class="About__Presentation-Txt">A young UX / UI Designer and Assistant Art Director at <span class="About__Presentation-Link"> <a target="_blank" href="https://www.hetic.net/"  >Hetic</a></span> in Paris. <br> <br> I've worked with clients like <span class="About__Presentation-Soc">Wespr</span>        and <span class="About__Presentation-Soc">Microsoft</span>.</p>
+      <p class="About__Presentation-Txt">A Developper Front and Art Director at <span class="About__Presentation-Link"> <a target="_blank" href="https://www.hetic.net/"  >Hetic</a></span> in Paris. <br> <br> I've worked with clients like <a href="http://www.wespr.co/#/" target="_blank" class="About__Presentation-Soc">Wespr</a>        and <a target="_blank" href="https://marketplace.minecraft.net/en-us/creator?name=pixelbiester" class="About__Presentation-Soc">Microsoft</a>.</p>
       <p class="About__Presentation-Internship">I'm actually based in Paris and looking for an internship.</p>
     </div>
     <div class="About__Link">
@@ -49,22 +53,31 @@
     <p class="Works-Title">Some works i did.</p>
     <div class="Works__Container">
       <div class="Works__Container-Item">
+        <!-- <div class="block" data-fx="2">
+          <a data-img="img/DOC2.png" href="doc.html" class="block__title" target="_blank">Japan music <span class="preview">preview</span></a>
+        </div> -->
         <div class="block" data-fx="2">
           <a data-img="img/ui3.jpg" href="https://maximeoger.github.io/decision_game/" class="block__title" target="_blank">Interactive story </a>
+        </div>
+        <div class="block" data-fx="2">
+          <a data-img="img/skull.png" href="https://lekawa.github.io/SKULL/" class="block__title" target="_blank">Skull retro</a>
         </div>
         <div class="block__title" data-fx="2">
           <a data-img=" img/minecraft1.jpg" href="Mi.html">Minecraft</a>
         </div>
+        <div class="block__title" data-fx="2">
+          <a target="_blank" data-img=" img/aokigaza.png" href="https://lekawa.github.io/Aokigaza/index.html">Aokigaza</a>
+        </div>
 
         <div class="block__title" data-fx="2">
-          <a  data-img=" img/riba.gif" href="https://www.behance.net/gallery/70909101/Riba-Architecture-Website" target="_blank">RIBA redesign website</a>
+          <a data-img=" img/Logo1rotate.gif" href="https://www.behance.net/gallery/70909101/Riba-Architecture-Website" target="_blank">RIBA architecture</a>
+        </div>
+        <div class="block__title" data-fx="2">
+          <a data-img=" img/eshop.png" href="https://codepen.io/Hectororor/pen/ZVWwQd" target="_blank">Chemise | e-shop </a>
         </div>
 
         <div class="block__title" data-fx="2">
           <a data-img=" img/6.gif" href="Mo.html">Motion creations</a>
-        </div>
-        <div class="block__title" data-fx="2">
-          <a data-img=" img/tshirt4.png" href="Tshirt.html">T-Shirt</a>
         </div>
         <div class="block__title" data-fx="2">
           <a data-img="img/immeuble.png" href="ui.html">Ui design</a>
@@ -85,296 +98,302 @@
       <a href="https://www.behance.net/hectortrav40c8" target="_blank">Behance</a>
       <a href="https://dribbble.com/LeKawa" target="_blank">Dribbble</a>
       <a href="https://codepen.io/Hectororor/" target="_blank">Codepen</a>
+      <a href="https://github.com/LeKawa" target="_blank">Github</a>
     </div>
   </section>
   <div class="imgContainer">
     <div class="img">
     </div>
   </div>
-  		<script src="charming.min.js"></script>
+  <script src="charming.min.js"></script>
   <script src="TweenMax.min.js"></script>
   <script>
-    // var ContainerImg = document.querySelector('.img')
-    //
-    // var links = document.querySelectorAll('.Works__Container-Link a')
-    // var imgArray = [
-    //
-    //   "./img/ui3.jpg",
-    //   "./img/minecraft1.jpg",
-    //   "./img/riba.gif",
-    //   "./img/6.gif",
-    //   "./img/tshirt4.png",
-    //   "./img/immeuble.png",
-    //   "./img/5.gif"
-    // ]
-    // for (let i = 0; i < links.length; i++) {
-    //   links[i].addEventListener('mouseover', function(e) {
-    //     ContainerImg.style.backgroundImage = "url(" + imgArray[i] + ")"
-    //   })
-    //   links[i].addEventListener('mouseout', function() {
-    //     ContainerImg.style.backgroundImage = ""
-    //   })
-    // }
-    //
-    // window.addEventListener('mousemove', function(e) {
-    //   ContainerImg.style.top = e.clientY - ContainerImg.clientHeight + 'px'
-    //   ContainerImg.style.left = e.clientX + 'px'
-    // })
-    /**
-     * demo.js
-     * http://www.codrops.com
-     *
-     * Licensed under the MIT license.
-     * http://www.opensource.org/licenses/mit-license.php
-     *
-     * Copyright 2018, Codrops
-     * http://www.codrops.com
-     */
     {
-    	const getMousePos = (e) => {
-            let posx = 0;
-            let posy = 0;
-    		if (!e) e = window.event;
-    		if (e.pageX || e.pageY) {
-                posx = e.pageX;
-    			posy = e.pageY;
-    		}
-    		else if (e.clientX || e.clientY) 	{
-    			posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
-    			posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
-    		}
-            return { x : posx, y : posy }
+      const getMousePos = (e) => {
+        let posx = 0;
+        let posy = 0;
+        if (!e) e = window.event;
+        if (e.pageX || e.pageY) {
+          posx = e.pageX;
+          posy = e.pageY;
+        } else if (e.clientX || e.clientY) {
+          posx = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft;
+          posy = e.clientY + document.body.scrollTop + document.documentElement.scrollTop;
         }
-        // Generate a random float.
-        const getRandomFloat = (min, max) => (Math.random() * (max - min) + min).toFixed(2);
-
-        /**
-         * One class per effect.
-         * Lots of code is repeated, so that single effects can be easily used.
-         */
-
-        // Effect 1
-        class HoverImgFx1 {
-            constructor(el) {
-                this.DOM = {el: el};
-                this.DOM.reveal = document.createElement('div');
-                this.DOM.reveal.className = 'hover-reveal';
-                this.DOM.reveal.innerHTML = `<div class="hover-reveal__inner"><div class="hover-reveal__img" style="background-image:url(${this.DOM.el.dataset.img})"></div></div>`;
-                this.DOM.el.appendChild(this.DOM.reveal);
-                this.DOM.revealInner = this.DOM.reveal.querySelector('.hover-reveal__inner');
-                this.DOM.revealInner.style.overflow = 'hidden';
-                this.DOM.revealImg = this.DOM.revealInner.querySelector('.hover-reveal__img');
-
-                this.initEvents();
-            }
-            initEvents() {
-                this.positionElement = (ev) => {
-                    const mousePos = getMousePos(ev);
-                    const docScrolls = {
-                        left : document.body.scrollLeft + document.documentElement.scrollLeft,
-                        top : document.body.scrollTop + document.documentElement.scrollTop
-                    };
-                    this.DOM.reveal.style.top = `${mousePos.y+20-docScrolls.top}px`;
-                    this.DOM.reveal.style.left = `${mousePos.x+20-docScrolls.left}px`;
-                };
-                this.mouseenterFn = (ev) => {
-                    this.positionElement(ev);
-                    this.showImage();
-                };
-                this.mousemoveFn = ev => requestAnimationFrame(() => {
-                    this.positionElement(ev);
-                });
-                this.mouseleaveFn = () => {
-                    this.hideImage();
-                };
-
-                this.DOM.el.addEventListener('mouseenter', this.mouseenterFn);
-                this.DOM.el.addEventListener('mousemove', this.mousemoveFn);
-                this.DOM.el.addEventListener('mouseleave', this.mouseleaveFn);
-            }
-            showImage() {
-                TweenMax.killTweensOf(this.DOM.revealInner);
-                TweenMax.killTweensOf(this.DOM.revealImg);
-
-                this.tl = new TimelineMax({
-                    onStart: () => {
-                        this.DOM.reveal.style.opacity = 1;
-                        TweenMax.set(this.DOM.el, {zIndex: 1000});
-                    }
-                })
-                .add('begin')
-                .add(new TweenMax(this.DOM.revealInner, 0.2, {
-                    ease: Sine.easeOut,
-                    startAt: {x: '-100%'},
-                    x: '0%'
-                }), 'begin')
-                .add(new TweenMax(this.DOM.revealImg, 0.2, {
-                    ease: Sine.easeOut,
-                    startAt: {x: '100%'},
-                    x: '0%'
-                }), 'begin');
-            }
-            hideImage() {
-                TweenMax.killTweensOf(this.DOM.revealInner);
-                TweenMax.killTweensOf(this.DOM.revealImg);
-
-                this.tl = new TimelineMax({
-                    onStart: () => {
-                        TweenMax.set(this.DOM.el, {zIndex: 999});
-                    },
-                    onComplete: () => {
-                        TweenMax.set(this.DOM.el, {zIndex: ''});
-                        TweenMax.set(this.DOM.reveal, {opacity: 0});
-                    }
-                })
-                .add('begin')
-                .add(new TweenMax(this.DOM.revealInner, 0.2, {
-                    ease: Sine.easeOut,
-                    x: '100%'
-                }), 'begin')
-
-                .add(new TweenMax(this.DOM.revealImg, 0.2, {
-                    ease: Sine.easeOut,
-                    x: '-100%'
-                }), 'begin');
-            }
+        return {
+          x: posx,
+          y: posy
         }
+      }
+      // Generate a random float.
+      const getRandomFloat = (min, max) => (Math.random() * (max - min) + min).toFixed(2);
 
-        // Effect 2
-        class HoverImgFx2 {
-            constructor(el) {
-                this.DOM = {el: el};
-                this.DOM.reveal = document.createElement('div');
-                this.DOM.reveal.className = 'hover-reveal';
-                this.DOM.reveal.style.overflow = 'hidden';
-                this.DOM.reveal.innerHTML = `<div class="hover-reveal__inner"><div class="hover-reveal__img" style="background-image:url(${this.DOM.el.dataset.img})"></div></div>`;
-                this.DOM.el.appendChild(this.DOM.reveal);
-                this.DOM.revealInner = this.DOM.reveal.querySelector('.hover-reveal__inner');
-                this.DOM.revealInner.style.overflow = 'hidden';
-                this.DOM.revealImg = this.DOM.revealInner.querySelector('.hover-reveal__img');
-                charming(this.DOM.el);
-                this.DOM.letters = Array.from(this.DOM.el.querySelectorAll('span'));
-                this.initEvents();
-            }
-            initEvents() {
-                this.positionElement = (ev) => {
-                    const mousePos = getMousePos(ev);
-                    const docScrolls = {
-                        left : document.body.scrollLeft + document.documentElement.scrollLeft,
-                        top : document.body.scrollTop + document.documentElement.scrollTop
-                    };
-                    this.DOM.reveal.style.top = `${mousePos.y+20-docScrolls.top}px`;
-                    this.DOM.reveal.style.left = `${mousePos.x+20-docScrolls.left}px`;
-                };
-                this.mouseenterFn = (ev) => {
-                    this.positionElement(ev);
-                    this.showImage();
-                    this.animateLetters();
-                };
-                this.mousemoveFn = ev => requestAnimationFrame(() => {
-                    this.positionElement(ev);
-                });
-                this.mouseleaveFn = () => {
-                    this.hideImage();
-                };
+      /**
+       * One class per effect.
+       * Lots of code is repeated, so that single effects can be easily used.
+       */
 
-                this.DOM.el.addEventListener('mouseenter', this.mouseenterFn);
-                this.DOM.el.addEventListener('mousemove', this.mousemoveFn);
-                this.DOM.el.addEventListener('mouseleave', this.mouseleaveFn);
-            }
-            showImage() {
-                TweenMax.killTweensOf(this.DOM.revealInner);
-                TweenMax.killTweensOf(this.DOM.revealImg);
+      // Effect 1
+      class HoverImgFx1 {
+        constructor(el) {
+          this.DOM = {
+            el: el
+          };
+          this.DOM.reveal = document.createElement('div');
+          this.DOM.reveal.className = 'hover-reveal';
+          this.DOM.reveal.innerHTML = `<div class="hover-reveal__inner"><div class="hover-reveal__img" style="background-image:url(${this.DOM.el.dataset.img})"></div></div>`;
+          this.DOM.el.appendChild(this.DOM.reveal);
+          this.DOM.revealInner = this.DOM.reveal.querySelector('.hover-reveal__inner');
+          this.DOM.revealInner.style.overflow = 'hidden';
+          this.DOM.revealImg = this.DOM.revealInner.querySelector('.hover-reveal__img');
 
-                this.tl = new TimelineMax({
-                    onStart: () => {
-                        this.DOM.reveal.style.opacity = 1;
-                        TweenMax.set(this.DOM.el, {zIndex: 1000});
-                    }
-                })
-                .add('begin')
-                .set([this.DOM.revealInner, this.DOM.revealImg], {transformOrigin: '50% 100%'})
-                .add(new TweenMax(this.DOM.revealInner, 0.4, {
-                    ease: Expo.easeOut,
-                    startAt: {x: '50%', y: '120%', rotation: 50},
-                    x: '0%',
-                    y: '0%',
-                    rotation: 0
-                }), 'begin')
-                .add(new TweenMax(this.DOM.revealImg, 0.4, {
-                    ease: Expo.easeOut,
-                    startAt: {x: '-50%', y: '-120%', rotation: -50},
-                    x: '0%',
-                    y: '0%',
-                    rotation: 0
-                }), 'begin')
-                .add(new TweenMax(this.DOM.revealImg, 0.7, {
-                    ease: Expo.easeOut,
-                    startAt: {scale: 2},
-                    scale: 1
-                }), 'begin');
-            }
-            hideImage() {
-                TweenMax.killTweensOf(this.DOM.revealInner);
-                TweenMax.killTweensOf(this.DOM.revealImg);
-
-                this.tl = new TimelineMax({
-                    onStart: () => {
-                        TweenMax.set(this.DOM.el, {zIndex: 999});
-                    },
-                    onComplete: () => {
-                        TweenMax.set(this.DOM.el, {zIndex: ''});
-                        TweenMax.set(this.DOM.reveal, {opacity: 0});
-                    }
-                })
-                .add('begin')
-                //.set([this.DOM.revealInner, this.DOM.revealImg], {transformOrigin: '50% 0%'})
-                .add(new TweenMax(this.DOM.revealInner, 0.6, {
-                    ease: Expo.easeOut,
-                    y: '-120%',
-                    rotation: -5
-                }), 'begin')
-                .add(new TweenMax(this.DOM.revealImg, 0.6, {
-                    ease: Expo.easeOut,
-                    y: '120%',
-                    rotation: 5,
-                    scale: 1.2
-                }), 'begin')
-            }
-            animateLetters() {
-                this.DOM.letters.forEach((letter,pos) => {
-                    TweenMax.set(letter, {opacity: 0});
-                    const delay = pos*2/100;
-                    TweenMax.to(letter, pos*0.07 + 0.2, {
-                        ease: Expo.easeOut,
-                        delay: delay,
-                        startAt: {x: '100%'},
-                        x: '0%',
-                        opacity: 1
-                    });
-                });
-            }
+          this.initEvents();
         }
+        initEvents() {
+          this.positionElement = (ev) => {
+            const mousePos = getMousePos(ev);
+            const docScrolls = {
+              left: document.body.scrollLeft + document.documentElement.scrollLeft,
+              top: document.body.scrollTop + document.documentElement.scrollTop
+            };
+            this.DOM.reveal.style.top = `${mousePos.y+20-docScrolls.top}px`;
+            this.DOM.reveal.style.left = `${mousePos.x+20-docScrolls.left}px`;
+          };
+          this.mouseenterFn = (ev) => {
+            this.positionElement(ev);
+            this.showImage();
+          };
+          this.mousemoveFn = ev => requestAnimationFrame(() => {
+            this.positionElement(ev);
+          });
+          this.mouseleaveFn = () => {
+            this.hideImage();
+          };
+
+          this.DOM.el.addEventListener('mouseenter', this.mouseenterFn);
+          this.DOM.el.addEventListener('mousemove', this.mousemoveFn);
+          this.DOM.el.addEventListener('mouseleave', this.mouseleaveFn);
+        }
+        showImage() {
+          TweenMax.killTweensOf(this.DOM.revealInner);
+          TweenMax.killTweensOf(this.DOM.revealImg);
+
+          this.tl = new TimelineMax({
+              onStart: () => {
+                this.DOM.reveal.style.opacity = 1;
+                TweenMax.set(this.DOM.el, {
+                  zIndex: 1000
+                });
+              }
+            })
+            .add('begin')
+            .add(new TweenMax(this.DOM.revealInner, 0.2, {
+              ease: Sine.easeOut,
+              startAt: {
+                x: '-100%'
+              },
+              x: '0%'
+            }), 'begin')
+            .add(new TweenMax(this.DOM.revealImg, 0.2, {
+              ease: Sine.easeOut,
+              startAt: {
+                x: '100%'
+              },
+              x: '0%'
+            }), 'begin');
+        }
+        hideImage() {
+          TweenMax.killTweensOf(this.DOM.revealInner);
+          TweenMax.killTweensOf(this.DOM.revealImg);
+
+          this.tl = new TimelineMax({
+              onStart: () => {
+                TweenMax.set(this.DOM.el, {
+                  zIndex: 999
+                });
+              },
+              onComplete: () => {
+                TweenMax.set(this.DOM.el, {
+                  zIndex: ''
+                });
+                TweenMax.set(this.DOM.reveal, {
+                  opacity: 0
+                });
+              }
+            })
+            .add('begin')
+            .add(new TweenMax(this.DOM.revealInner, 0.2, {
+              ease: Sine.easeOut,
+              x: '100%'
+            }), 'begin')
+
+            .add(new TweenMax(this.DOM.revealImg, 0.2, {
+              ease: Sine.easeOut,
+              x: '-100%'
+            }), 'begin');
+        }
+      }
+
+      // Effect 2
+      class HoverImgFx2 {
+        constructor(el) {
+          this.DOM = {
+            el: el
+          };
+          this.DOM.reveal = document.createElement('div');
+          this.DOM.reveal.className = 'hover-reveal';
+          this.DOM.reveal.style.overflow = 'hidden';
+          this.DOM.reveal.innerHTML = `<div class="hover-reveal__inner"><div class="hover-reveal__img" style="background-image:url(${this.DOM.el.dataset.img})"></div></div>`;
+          this.DOM.el.appendChild(this.DOM.reveal);
+          this.DOM.revealInner = this.DOM.reveal.querySelector('.hover-reveal__inner');
+          this.DOM.revealInner.style.overflow = 'hidden';
+          this.DOM.revealImg = this.DOM.revealInner.querySelector('.hover-reveal__img');
+          charming(this.DOM.el);
+          this.DOM.letters = Array.from(this.DOM.el.querySelectorAll('span'));
+          this.initEvents();
+        }
+        initEvents() {
+          this.positionElement = (ev) => {
+            const mousePos = getMousePos(ev);
+            const docScrolls = {
+              left: document.body.scrollLeft + document.documentElement.scrollLeft,
+              top: document.body.scrollTop + document.documentElement.scrollTop
+            };
+            this.DOM.reveal.style.top = `${mousePos.y+20-docScrolls.top}px`;
+            this.DOM.reveal.style.left = `${mousePos.x+20-docScrolls.left}px`;
+          };
+          this.mouseenterFn = (ev) => {
+            this.positionElement(ev);
+            this.showImage();
+            this.animateLetters();
+          };
+          this.mousemoveFn = ev => requestAnimationFrame(() => {
+            this.positionElement(ev);
+          });
+          this.mouseleaveFn = () => {
+            this.hideImage();
+          };
+
+          this.DOM.el.addEventListener('mouseenter', this.mouseenterFn);
+          this.DOM.el.addEventListener('mousemove', this.mousemoveFn);
+          this.DOM.el.addEventListener('mouseleave', this.mouseleaveFn);
+        }
+        showImage() {
+          TweenMax.killTweensOf(this.DOM.revealInner);
+          TweenMax.killTweensOf(this.DOM.revealImg);
+
+          this.tl = new TimelineMax({
+              onStart: () => {
+                this.DOM.reveal.style.opacity = 1;
+                TweenMax.set(this.DOM.el, {
+                  zIndex: 1000
+                });
+              }
+            })
+            .add('begin')
+            .set([this.DOM.revealInner, this.DOM.revealImg], {
+              transformOrigin: '50% 100%'
+            })
+            .add(new TweenMax(this.DOM.revealInner, 0.4, {
+              ease: Expo.easeOut,
+              startAt: {
+                x: '50%',
+                y: '120%',
+                rotation: 50
+              },
+              x: '0%',
+              y: '0%',
+              rotation: 0
+            }), 'begin')
+            .add(new TweenMax(this.DOM.revealImg, 0.4, {
+              ease: Expo.easeOut,
+              startAt: {
+                x: '-50%',
+                y: '-120%',
+                rotation: -50
+              },
+              x: '0%',
+              y: '0%',
+              rotation: 0
+            }), 'begin')
+            .add(new TweenMax(this.DOM.revealImg, 0.7, {
+              ease: Expo.easeOut,
+              startAt: {
+                scale: 2
+              },
+              scale: 1
+            }), 'begin');
+        }
+        hideImage() {
+          TweenMax.killTweensOf(this.DOM.revealInner);
+          TweenMax.killTweensOf(this.DOM.revealImg);
+
+          this.tl = new TimelineMax({
+              onStart: () => {
+                TweenMax.set(this.DOM.el, {
+                  zIndex: 999
+                });
+              },
+              onComplete: () => {
+                TweenMax.set(this.DOM.el, {
+                  zIndex: ''
+                });
+                TweenMax.set(this.DOM.reveal, {
+                  opacity: 0
+                });
+              }
+            })
+            .add('begin')
+            //.set([this.DOM.revealInner, this.DOM.revealImg], {transformOrigin: '50% 0%'})
+            .add(new TweenMax(this.DOM.revealInner, 0.6, {
+              ease: Expo.easeOut,
+              y: '-120%',
+              rotation: -5
+            }), 'begin')
+            .add(new TweenMax(this.DOM.revealImg, 0.6, {
+              ease: Expo.easeOut,
+              y: '120%',
+              rotation: 5,
+              scale: 1.2
+            }), 'begin')
+        }
+        animateLetters() {
+          this.DOM.letters.forEach((letter, pos) => {
+            TweenMax.set(letter, {
+              opacity: 0
+            });
+            const delay = pos * 2 / 100;
+            TweenMax.to(letter, pos * 0.07 + 0.2, {
+              ease: Expo.easeOut,
+              delay: delay,
+              startAt: {
+                x: '100%'
+              },
+              x: '0%',
+              opacity: 1
+            });
+          });
+        }
+      }
 
 
-        Array.from(document.querySelectorAll('[data-fx="2"] > a, a[data-fx="2"]')).forEach(link => new HoverImgFx2(link));
+      Array.from(document.querySelectorAll('[data-fx="2"] > a, a[data-fx="2"]')).forEach(link => new HoverImgFx2(link));
 
 
-        const contentel = document.querySelector('.content');
-        Array.from(document.querySelectorAll('.block__title, .block__link, .content__text-link')).forEach((el) => {
-            const imgsArr = el.dataset.img.split(',');
-            for (let i = 0, len = imgsArr.length; i <= len-1; ++i ) {
-                const imgel = document.createElement('img');
-                imgel.style.visibility = 'hidden';
-                imgel.style.width = 0;
-                imgel.src = imgsArr[i];
-                imgel.className = 'preload';
-                contentel.appendChild(imgel);
-            }
-        });
-        imagesLoaded(document.querySelectorAll('.preload'), () => document.body.classList.remove('loading'));
+      const contentel = document.querySelector('.content');
+      Array.from(document.querySelectorAll('.block__title, .block__link, .content__text-link')).forEach((el) => {
+        const imgsArr = el.dataset.img.split(',');
+        for (let i = 0, len = imgsArr.length; i <= len - 1; ++i) {
+          const imgel = document.createElement('img');
+          imgel.style.visibility = 'hidden';
+          imgel.style.width = 0;
+          imgel.src = imgsArr[i];
+          imgel.className = 'preload';
+          contentel.appendChild(imgel);
+        }
+      });
+      imagesLoaded(document.querySelectorAll('.preload'), () => document.body.classList.remove('loading'));
     }
-
   </script>
 </body>
 

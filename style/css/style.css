@@ -188,8 +188,12 @@ table {
         font-size: 46px;
         width: 450px; } }
     .About__Presentation-Soc {
+      transition: all .4s ease-out;
       font-style: italic;
       opacity: 0.5; }
+      .About__Presentation-Soc:hover {
+        opacity: 1;
+        color: black; }
     .About__Presentation-Link {
       font-style: italic;
       font-size: 32px; }
@@ -207,7 +211,7 @@ table {
           display: block;
           position: absolute;
           left: 0;
-          bottom: 0;
+          bottom: 5px;
           height: 3px;
           width: 100%;
           transition: width 0s ease-out; }
@@ -219,7 +223,7 @@ table {
           display: block;
           position: absolute;
           right: 0;
-          bottom: 0;
+          bottom: 5px;
           height: 3px;
           width: 100%;
           background: #fc4747;
@@ -245,8 +249,7 @@ table {
       @media (min-width: 1024px) {
         .About__Presentation-Internship {
           font-size: 46px;
-          font-weight: 400;
-          height: 44vh; } }
+          font-weight: 400; } }
 
 .Footer {
   position: fixed;
@@ -458,6 +461,9 @@ svg {
       margin-top: 100px;
       margin-left: 20%;
       margin-bottom: 10vh; } }
+  .Contact > p {
+    font-family: "cardo", serif;
+    font-weight: 400; }
   .Contact__Social {
     display: flex;
     flex-direction: column;
@@ -478,8 +484,8 @@ a {
   color: var(--color-link);
   outline: none; }
 
-a:hover,
-a:focus {
+a:focus,
+a:hover {
   color: var(--color-link-hover); }
 
 a:focus,
@@ -522,10 +528,13 @@ main {
   flex-direction: column; }
 
 .block__title {
+  font-size: 32Px;
   position: relative;
-  font-size: 48px;
   cursor: pointer;
   color: var(--color-blocktitle); }
+  @media (min-width: 1024px) {
+    .block__title {
+      font-size: 48px; } }
 
 .block__title:hover {
   color: var(--color-blocktitle-hover); }
@@ -665,6 +674,7 @@ a.content__text-link[data-fx="10"]:hover::after {
   height: 250px;
   top: 0;
   left: 0;
+  z-index: 100;
   pointer-events: none;
   opacity: 0; }
 
@@ -697,6 +707,10 @@ body {
   --color-blocktitle-hover: #fc4747;
   --color-text: #000; }
 
+.preview {
+  font-size: 28px;
+  font-style: italic; }
+
 .Another {
   margin-top: 25vh;
   height: 30px;
@@ -711,6 +725,67 @@ body {
       color: black; }
       .Another__Link > a:hover {
         color: white; }
+
+.Titlee {
+  display: flex;
+  height: 80vh;
+  overflow: hidden;
+  width: 100%; }
+  .Titlee_Item {
+    font-family: "Cardo", serif;
+    margin-top: 15vh;
+    font-size: 370px;
+    display: flex;
+    margin-left: -5vw; }
+
+.Article {
+  display: flex;
+  width: 714px;
+  margin: 100px auto; }
+  .Article_Type {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 50px; }
+    .Article_Type > p {
+      padding-bottom: 5px; }
+  .Article_Item {
+    width: 100%; }
+  .Article_What {
+    font-weight: 300;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif; }
+
+.Text {
+  width: 720px;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2; }
+
+.Desc {
+  width: 714px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  .Desc_Text {
+    width: 365px;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif; }
+  .Desc_Link > a {
+    font-size: 16px;
+    font-family: "Cardo", serif;
+    color: #fc4747; }
+
+.Art {
+  margin: 150px auto;
+  width: 1024px; }
+  .Art_Img {
+    width: 100%; }
+    .Art_Img > img {
+      width: 100%;
+      height: auto; }
 
 *,
 *:after,

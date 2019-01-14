@@ -1,0 +1,85 @@
+.Titlee {
+  display: flex;
+  height: 80vh;
+  overflow: hidden;
+  width: 100%;
+
+  &_Item {
+    font-family: $SecondFont;
+    margin-top: 15vh;
+    font-size: 370px;
+    display: flex;
+    margin-left: -5vw;
+  }
+}
+
+.Article {
+  display: flex;
+  width: 714px;
+  margin: 100px auto;
+
+  &_Type {
+    font-family: $MainFont;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 50px;
+
+    & > p {
+      padding-bottom: 5px;
+    }
+  }
+
+  &_Item {
+    width: 100%;
+  }
+
+  &_What {
+    font-weight: 300;
+    font-size: 24px;
+    font-family: $MainFont;
+  }
+}
+
+.Text {
+  width: 720px;
+  font-size: 24px;
+  font-family: $MainFont;
+  line-height: 1.2;
+}
+
+.Desc {
+  width: 714px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  &_Text {
+    width: 365px;
+    font-weight: 300;
+    line-height: 1.4;
+    font-size: 20px;
+    font-family: $MainFont;
+  }
+
+  &_Link {
+    & > a {
+      font-size: 16px;
+      font-family: $SecondFont;
+      color: #fc4747;
+    }
+  }
+}
+
+.Art {
+  margin: 150px auto;
+  width: 1024px;
+
+  &_Img {
+    width: 100%;
+
+    & > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
