@@ -711,21 +711,6 @@ body {
   font-size: 28px;
   font-style: italic; }
 
-.Another {
-  margin-top: 25vh;
-  height: 30px;
-  margin-bottom: 10vh;
-  width: 100%;
-  display: flex;
-  justify-content: center; }
-  .Another__Link {
-    font-size: 48px;
-    font-family: "Cardo", serif; }
-    .Another__Link > a {
-      color: black; }
-      .Another__Link > a:hover {
-        color: white; }
-
 .Titlee {
   display: flex;
   height: 80vh;
