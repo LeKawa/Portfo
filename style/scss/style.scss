@@ -7,7 +7,6 @@
 @import "./components/intro";
 @import "./components/projet";
 @import "./components/contact";
-@import "./components/another";
 @import "./components/article";
 
 *,
@@ -18,7 +17,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -30,5 +29,17 @@
 }
 
 body {
+  animation-duration: 1.5s;
+  animation-name: slidein;
   background-color: #efefef;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
