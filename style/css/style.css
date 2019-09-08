@@ -828,7 +828,7 @@ body {
   @media (min-width: 1024px) {
     .Art {
       margin: 150px auto;
-      width: 953px; } }
+      width: 80%; } }
   .Art_Img2 {
     width: 100%; }
     @media (min-width: 1024px) {
